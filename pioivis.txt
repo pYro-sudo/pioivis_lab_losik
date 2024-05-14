@@ -1,9 +1,0 @@
-touch {first.txt,second.txt}
-i=0
-while [ $i -le 2 ]
-do
-echo $(( RANDOM ))>> first.txt
-((i++))
-done
-grep -i "23" first.txt >> second.txt
-sort -r second.txt
